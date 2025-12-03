@@ -1,28 +1,19 @@
 # Book-Store-API
 A simple Book Store API built with Django REST Framework, featuring basic CRUD operations.
 
-Table of Contents
+TABLE OF CONTENTS
+1. Overview
 
-Overview
+2. Features
 
-Features
+3. Usage
 
-Installation
+4. API Endpoints
 
-Usage
-
-API Endpoints
-
-Contributing
-
-License
-
-Overview
-
+1. OVERVIEW
 Book-Store-API is a RESTful API for managing a book store. Users can create, read, update, and delete books. The API is built with Django and Django REST Framework, demonstrating basic backend practices including viewsets, pagination, and SQLite database integration.
 
-Features
-
+2. FEATURES
 CRUD operations for books
 
 SQLite database integration
@@ -31,8 +22,7 @@ Pagination for book lists
 
 Viewsets for clean API structure
 
-Usage
-
+3. USAGE
 Use an API client (like Postman) to interact with the endpoints. Example endpoints:
 
 GET /books/router/ — list all books
@@ -45,10 +35,14 @@ PUT /books/router/<id>/ — update a book by ID
 
 DELETE /books/router/<id>/ — delete a book by ID
 
-API Endpoints
+4. API Endpoints
 Method	  Endpoint	            Description
 GET	    /books/router/	      List all books #implemented cursor pagination for the GET request
+
 POST	  /books/router/	      Add a new book
+
 GET	    /books/router/<id>/	  Retrieve book by ID
+
 PUT	    /books/router/<id>/	  Update book by ID
+
 DELETE	/books/router/<id>/	  Delete book by ID
